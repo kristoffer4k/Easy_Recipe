@@ -1,7 +1,24 @@
+@import './colors';
+@import './fonts';
+@import './mixins';
+
 .main {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85),rgba(221, 213, 213, 0.8)), url(../assets/main.jpg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2),rgba(221, 213, 213, 0.8)), url(../assets/main.jpg);
     // background: url(../assets/main.jpg);
     height: 80vh;
     background-size: cover;
     overflow: hidden;
+
+    .content {
+        margin: 3rem;
+        text-align: center;
+        h1 {
+        font-family: $font-montserrat;
+        color: $white-color;
+        font-size: 2.5rem;
+        text-shadow: 4px 4px 3px $secondary-color;
+        }
+
+
+    }
 }

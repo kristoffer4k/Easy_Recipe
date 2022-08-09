@@ -6,9 +6,7 @@ const Header = () => {
   return (
     <section className='header'>
       <nav>
-        <div className='logo'>
-           <h1>Easy Recipe</h1>
-        </div>
+        <div className='logo'>Easy Recipe</div>
         <ul className='ul-items'>
           <li className='li-items'>
             <Link to='home'>Home</Link>
