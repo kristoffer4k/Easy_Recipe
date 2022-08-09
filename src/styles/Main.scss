@@ -42,12 +42,15 @@
 
         }
         input:focus {
-            outline: none;
+            outline: none;   
         }
         ::placeholder {
             color: $grey-color;
         }
-
+        input:focus::placeholder {
+            color: transparent;
+          }
+       
 
         button {
             padding: 0 2rem;
@@ -67,7 +70,7 @@
 }
 
 .icon {
-   color: aqua;
-   font-size: 20px; 
+   color: rgb(255, 0, 0);
+   font-size: 50px; 
 }    
 
