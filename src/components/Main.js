@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Main.scss'
-// import { FaSearch } from 'react-icons/fa';
 
 function Main() {
   return (
@@ -10,7 +9,6 @@ function Main() {
         
       </div>
       <form className='form_1' >
-         {/* <FaSearch className='icon'/> */}
          <input type='text' className='icon' placeholder='Search by dish, ingredient or keyword'/>
          <button  type='submit'>Search</button>
        </form> 
