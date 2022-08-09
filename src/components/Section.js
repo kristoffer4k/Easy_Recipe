@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Section.scss'
 
-function Sections() {
+function Section() {
   return (
     <section className='main-section'>
 
@@ -9,4 +9,4 @@ function Sections() {
   )
 }
 
-export default Sections
+export default Section
