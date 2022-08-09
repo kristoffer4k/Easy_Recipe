@@ -1,3 +1,39 @@
 @import './colors';
 @import './fonts';
 @import './mixins';
+
+.header {
+    position: sticky;
+    top: 0;
+
+
+    nav {
+        @include flex-center;
+        justify-content: space-around;
+        height: 5rem;
+        background-color: $main-color;
+
+        .ul-items {
+            list-style: none;
+            font-family: $font-montserrat;
+
+            .li-items {
+                a {
+                text-decoration: none;
+                color: $white-color;
+                margin: 0 2rem;
+                font-weight: 600;
+            }
+                a:hover {
+                    color: $secondary-color;
+                }
+                
+            }
+        }
+        .logo {
+            color: $white-color;
+            font-family: $font-pacifico;
+            font-size: 2rem;
+        }
+    }
+}
