@@ -4,9 +4,10 @@
 
 .main {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 1)), url(../assets/main.jpg);
-    height: 55vh;
+    height: 20rem;
     background-size: cover;
     overflow: hidden;
+    margin-bottom: 2rem;
 
     .content {
         margin-top: 8rem;
@@ -15,7 +16,7 @@
         h1 {
         font-family: $font-montserrat;
         color: $black-color;
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         font-weight: 400;
         }
     }
