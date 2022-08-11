@@ -1,0 +1,46 @@
+@import './colors';
+@import './fonts';
+@import './mixins';
+
+.contest {
+    @include section-space;
+
+    .content {
+        font-family: $font-montserrat;
+        line-height: 45px;
+
+        div {
+            display: flex;
+            margin-top: 1.5rem;
+            justify-content: center;
+
+            p {
+                font-weight: 500;
+            }
+            
+            button {
+                padding: 0 0.6rem;
+                font-family: $font-montserrat;
+                font-size: 1.5rem;
+                font-weight: 600;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                background-color: $main-color;
+                color: $white-color;
+                cursor: pointer;
+                margin-right: 0.5rem;
+            }
+        }
+
+        h2{
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+
+        strong {
+            font-weight: 600;
+            color: $secondary-color;
+            }
+        }
+    }
+}

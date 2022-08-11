@@ -1,4 +1,10 @@
 @mixin flex-center {
     display: flex;
     align-items: center;
+};
+
+@mixin section-space {
+    margin: 4% 10%;
+    border-bottom: 2px solid $main-color;
+    padding: 0 0 50px;
 }

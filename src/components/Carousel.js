@@ -13,7 +13,8 @@ function Carousel() {
   }, []);
 
   return (
-    <div className='carousel-section'>  
+    <div className='carousel-section'>
+      <h2>Top 10 users photos in July 2022</h2>  
       <motion.div ref={carousel} className='carousel' whileTap={{cursor: "grabbing"}}>
         <motion.div 
           drag='x'

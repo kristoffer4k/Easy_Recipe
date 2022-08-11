@@ -1,5 +1,18 @@
+@import './colors';
+@import './fonts';
+@import './mixins';
+
 .carousel-section {
     margin: 0 10%;
+
+    h2 {
+        font-family: $font-montserrat;
+        line-height: 45px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 1.5rem;
+        text-align: justify;
+    }
 
     .carousel {
         cursor: grab;
