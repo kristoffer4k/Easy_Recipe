@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Section from './components/Section'; 
 import Contest from './components/Contest'; 
 import Carousel from './components/Carousel';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Section />
       <Contest />
       <Carousel />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+@import './colors';
+@import './fonts';
+@import './mixins';
+
+.footer {
+    height: 20rem;
+    background-color: $main-color;
+    
+    .newsletter {
+        @include flex-center;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-direction: row
+    }
+}

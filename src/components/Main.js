@@ -9,7 +9,7 @@ function Main() {
         
       </div>
       <form className='form_1' >
-         <input type='text' className='icon' placeholder='Search by dish, ingredient or keyword'/>
+         <input type='text' placeholder='Search by dish, ingredient or keyword'/>
          <button  type='submit'>Search</button>
        </form> 
        

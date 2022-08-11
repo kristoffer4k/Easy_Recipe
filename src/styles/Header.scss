@@ -6,35 +6,44 @@
     position: sticky;
     top: 0;
 
-
     nav {
         @include flex-center;
-        justify-content: space-around;
+        
+        justify-content: space-between;
         height: 4.5rem;
         background-color: $main-color;
 
         .ul-items {
             list-style: none;
             font-family: $font-montserrat;
+            margin-right: 10%;
 
             .li-items {
+
                 a {
                 text-decoration: none;
                 color: $white-color;
                 margin: 0 2rem;
                 font-weight: 600;
             }
+            
                 a:hover {
                     color: $secondary-color;
                     transition: 0.5s;
                 }
+
+                :last-child {
+                    margin-right: 0;
+                }
                 
             }
+            
         }
         .logo {
             color: $white-color;
             font-family: $font-pacifico;
             font-size: 2.1rem;
+            margin-left: 10%;
         }
     }
 }

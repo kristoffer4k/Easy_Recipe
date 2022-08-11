@@ -8,7 +8,7 @@ function Contest() {
             <h2>Send us a photo of your prepared dish cooked from our recipes and win a <strong>$10</strong> voucher!</h2>
             <div>
               <button  type='submit'>+</button>
-              <p>Upload a photo</p>
+              <p>Upload photo</p>
             </div>
         </div>
     </section>
