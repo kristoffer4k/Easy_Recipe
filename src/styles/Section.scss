@@ -1,0 +1,15 @@
+@import './colors';
+@import './fonts';
+@import './mixins';
+
+.section {
+    margin: 4% 10%;
+    border-bottom: 2px solid $main-color;
+    padding: 0 0 50px;
+
+    .content {
+        font-family: $font-montserrat;
+        line-height: 35px;
+        text-align: justify;
+    }
+}

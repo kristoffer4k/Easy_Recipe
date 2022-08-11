@@ -7,7 +7,7 @@
     height: 20rem;
     background-size: cover;
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     .content {
         margin-top: 8rem;
@@ -34,8 +34,8 @@
             font-family: $font-montserrat;
             font-size: 1rem;
             color: $black-color;
-            border: 1px solid transparent;
-            box-shadow: 0 0 8px $main-color;
+            border: 2px solid $main-color;
+            // box-shadow: 0 0 8px $main-color;
             border-radius: 30px;
         }
 
