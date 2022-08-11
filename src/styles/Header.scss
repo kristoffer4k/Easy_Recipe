@@ -8,7 +8,6 @@
 
     nav {
         @include flex-center;
-        
         justify-content: space-between;
         height: 4.5rem;
         background-color: $main-color;
@@ -47,3 +46,9 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .header nav {
+      height: 6rem;
+    }
+  }

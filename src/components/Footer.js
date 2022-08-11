@@ -13,7 +13,7 @@ function Footer() {
   return (
     <section className='footer'>
       <div className='newsletter'>
-        <h3>Subscribe to our weekly newsletter<br></br>so that you never miss the newest recipes!</h3>
+        <h3>Subscribe to our weekly newsletter so that you never miss the newest recipes!</h3>
           <div className='form_2'>
             <input type='text' placeholder='Email address'/>
             <button  type='submit'>Sign Up</button>

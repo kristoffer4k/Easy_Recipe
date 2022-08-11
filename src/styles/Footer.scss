@@ -19,15 +19,16 @@
             margin: 1.5rem 0;
             font-weight: 500;
             font-size: 0.9rem;
+            margin-right: 1rem;
         }
     
         .form_2 {
-
                 font-family: $font-montserrat;
                 display: flex;
                 justify-content: flex-end;
 
                 input {
+                    margin-left: 2rem;
                     width: 16rem;
                     height: 2rem;
                     padding: 0.5rem;
@@ -130,3 +131,9 @@
     
 }
     
+
+@media (max-width:1024px) {
+    .footer {
+      height: 14rem;
+    }
+  }
