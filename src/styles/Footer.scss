@@ -4,7 +4,7 @@
 
 
 .footer {
-    height: 13rem;
+    height: 12rem;
     background-color: $main-color;
     font-family: $font-montserrat;
     color: $white-color;
@@ -18,17 +18,18 @@
         h3 {
             margin: 1.5rem 0;
             font-weight: 500;
+            font-size: 0.9rem;
         }
     
         .form_2 {
 
                 font-family: $font-montserrat;
-                font-size: 1rem;
                 display: flex;
                 justify-content: flex-end;
 
                 input {
-                    width: 18rem;
+                    width: 16rem;
+                    height: 2rem;
                     padding: 0.5rem;
                     justify-content: center;
                     margin-right: 0.5rem;
@@ -36,7 +37,6 @@
                     font-size: 0.8rem;
                     color: $black-color;
                     border: 1px solid $white-color;
-                    // box-shadow: 0 0 8px $main-color;
                     border-radius: 15px;
                 }
         
@@ -55,6 +55,8 @@
         
                 button {
                     padding: 0.5rem 0.5rem;
+                    height: 2rem;
+                    width: 5rem;
                     font-family: $font-montserrat;
                     font-size: 0.8rem;
                     font-weight: 600;
@@ -66,7 +68,7 @@
                     cursor: pointer;
                 }
                 button:hover {       
-                        // color: $secondary-color;
+                        scale: 1.05;
                         transition: 0.5s;
                     }
         }
@@ -91,10 +93,10 @@
             .icon {
                 font-size: 1.5rem;
             }
-            // :hover {
-            //     scale: 1.1;
-            //     transition: 0.5s;
-            // }
+            :hover {
+                scale: 1.05;
+                transition: 0.5s;
+            }
         }
     }
 
@@ -118,6 +120,10 @@
             }
             :last-child {
                 margin-right: 0;
+            }
+            a:hover {
+                color: $black-color;
+                transition: 1s;
             }
         }
     }
