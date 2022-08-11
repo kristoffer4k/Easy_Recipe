@@ -2,14 +2,125 @@
 @import './fonts';
 @import './mixins';
 
+
 .footer {
-    height: 20rem;
+    height: 13rem;
     background-color: $main-color;
+    font-family: $font-montserrat;
+    color: $white-color;
     
     .newsletter {
         @include flex-center;
-        flex-direction: column;
         justify-content: space-between;
-        flex-direction: row
+        flex-direction: row;
+        margin: 0 10%;
+        
+        h3 {
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+    
+        .form_2 {
+
+                font-family: $font-montserrat;
+                font-size: 1rem;
+                display: flex;
+                justify-content: flex-end;
+
+                input {
+                    width: 18rem;
+                    padding: 0.5rem;
+                    justify-content: center;
+                    margin-right: 0.5rem;
+                    font-family: $font-montserrat;
+                    font-size: 0.8rem;
+                    color: $black-color;
+                    border: 1px solid $white-color;
+                    // box-shadow: 0 0 8px $main-color;
+                    border-radius: 15px;
+                }
+        
+                }
+                input:focus {
+                    outline: none;
+           
+                }
+                ::placeholder {
+                    color: $grey-color;
+                }
+                input:focus::placeholder {
+                    color: transparent;
+                  }
+               
+        
+                button {
+                    padding: 0.5rem 0.5rem;
+                    font-family: $font-montserrat;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    border: 1px solid $light-grey-color;
+                    border-radius: 15px;
+                    background-color: $light-grey-color;
+                    color: $main-color;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
+                    cursor: pointer;
+                }
+                button:hover {       
+                        // color: $secondary-color;
+                        transition: 0.5s;
+                    }
+        }
+    .social-media {
+        @include flex-center;
+        justify-content: space-around;
+        margin: 1rem 10%;
+        
+        .li-items {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $white-color;
+                margin: 0 1rem;
+                font-weight: 600;
+            }
+            :last-child {
+                margin-right: 0;
+            }
+            
+            .icon {
+                font-size: 1.5rem;
+            }
+            // :hover {
+            //     scale: 1.1;
+            //     transition: 0.5s;
+            // }
+        }
     }
+
+    
+    .terms-privacy {
+        @include flex-center;
+        justify-content: space-around;
+        margin: 1.5rem 10%;
+        
+        
+        .li-items {
+            list-style: none;
+            flex-direction: row;
+
+            a {
+                text-decoration: none;
+                color: $white-color;
+                font-weight: 300;
+                font-size: 0.8rem;
+                margin-right: 1rem; 
+            }
+            :last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    
 }
+    
