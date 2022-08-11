@@ -5,7 +5,7 @@ function Main() {
   return (
     <section className='main'>
       <div className='content'>
-        <h1>The easiest and fastest way to find<br></br>the recipe you want!</h1>
+        <h1>Find the recipe you want!</h1>
         
       </div>
       <form className='form_1' >

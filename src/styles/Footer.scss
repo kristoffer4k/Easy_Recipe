@@ -16,7 +16,7 @@
         margin: 0 10%;
         
         h3 {
-            margin: 1.5rem 0;
+            margin: 2rem 0;
             font-weight: 500;
             font-size: 0.9rem;
             margin-right: 1rem;
@@ -76,7 +76,7 @@
     .social-media {
         @include flex-center;
         justify-content: space-around;
-        margin: 1rem 10%;
+        margin: 0 10%;
         
         .li-items {
             list-style: none;
@@ -105,7 +105,7 @@
     .terms-privacy {
         @include flex-center;
         justify-content: space-around;
-        margin: 1.5rem 10%;
+        margin: 1rem 10%;
         
         
         .li-items {
@@ -134,6 +134,6 @@
 
 @media (max-width:1024px) {
     .footer {
-      height: 14rem;
+      height: 13rem;
     }
   }
