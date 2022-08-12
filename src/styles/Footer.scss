@@ -8,6 +8,7 @@
     background-color: $main-color;
     font-family: $font-montserrat;
     color: $white-color;
+    overflow: auto;
     
     .newsletter {
         @include flex-center;
