@@ -6,11 +6,10 @@ const Food = () => {
 
     const [query, setQuery] = useState (``);
     const [rcp, setRcp] = useState ([]);
-    const [list,setList] = useState('alcohol-free');
     
     const YOUR_APP_ID = '353d493e';
     const YOUR_APP_KEY = '18f4f90fe004e923f06c2ca3dae8e927';
-    const url = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&&health=${list}`;
+    const url = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
 
     async function getRecipe(){
         const result = await axios.get(url);
@@ -35,8 +34,10 @@ const Food = () => {
                 {rcp.map((item, index) => {
                     return (
                         <div key={index}>
-
+                            <img src={item['recipe']['image']} alt='' />
                             <p>{item['recipe']['label']}</p>
+                            <p>{item['recipe']['calories'].toFixed(0)}</p>
+                            <p>{<a href={item['recipe']['url']}>Read</a>}</p>
                         </div>
                     )
                     })}
