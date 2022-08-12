@@ -5,7 +5,6 @@ import Section from './components/Section';
 import Contest from './components/Contest'; 
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
-import Food from './components/Food';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <Contest />
       <Carousel />
       <Footer />
-      <Food />
     </div>
   );
 }
