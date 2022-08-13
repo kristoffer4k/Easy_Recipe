@@ -22,7 +22,6 @@ const Main = () => {
     const submitForm = element => {
         element.preventDefault();
         getRecipe();
-        
     }
 
     return ( 
