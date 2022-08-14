@@ -3,7 +3,6 @@ import '../styles/Main.scss';
 import axios from 'axios';
 
 
-
 const Main = () => {
 
     const [query, setQuery] = useState (``);
@@ -34,17 +33,18 @@ const Main = () => {
             <form className='form_1' onSubmit={submitForm}>
                 <input type='text' placeholder="Search by dish, ingredient or keyword" 
                  value={query} onChange={element => setQuery(element.target.value)}/>
-                <button type='submit'>Search</button>
+                <button type='submit' className='search'>Search</button>
             </form>
 
             <div className='print'>
                 {rcp.map((item, index) => {
                     return (
                         <div key={index} className='product'>
-                            <img src={item['recipe']['image']} alt='' />
-                            <p>{item['recipe']['label']}</p>
-                            <p>{item['recipe']['calories'].toFixed(0)}</p>
-                            <p>{<a href={item['recipe']['url']} target="_blank" rel="noopener noreferrer">Read</a>}</p>
+                            <img src={item['recipe']['image']} alt='' className='image'/>
+                            <p className='tittle'>{item['recipe']['label']}</p>
+                            <p className='ingredients'>Ingredients: {item['recipe']['ingredients'].length}</p>
+                            <p className='calories'>Calories: {item['recipe']['calories'].toFixed(0)}</p>
+                            <button className='open'>{<a href={item['recipe']['url']} target="_blank" rel="noopener noreferrer">Open</a>}</button>
                         </div>
                     )
                     })}

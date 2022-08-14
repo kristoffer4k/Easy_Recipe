@@ -54,7 +54,7 @@
           }
        
 
-        button {
+        .search {
             padding: 1rem 1rem;
             font-family: $font-montserrat;
             font-size: 1rem;
@@ -66,10 +66,13 @@
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
         }
-        button:hover {
+        .search:hover {
                 scale: 1.05;
                 transition: 0.5s;
             }
+        .search:active {
+            scale: 0.95;
+        }
     
     .print {
         display: grid;
@@ -92,6 +95,7 @@
             img {
                 border-radius: 25px;
                 width: 200px;
+                height: 200px;
                 
             }
         }
