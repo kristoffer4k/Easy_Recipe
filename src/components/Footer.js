@@ -23,11 +23,11 @@ function Footer() {
       
     <div className='social-media'>
       <li className='li-items'>
-          <a href='https://www.facebook.com/'><BsFacebook className='icon'/></a>
-          <a href='https://www.instagram.com/'><BsInstagram className='icon'/></a>
-          <a href='https://www.twitter.com/'><BsTwitter className='icon'/></a>
-          <a href='https://www.pinterest.com/'><BsPinterest className='icon'/></a>
-          <a href='https://www.youtube.com/'><BsYoutube className='icon'/></a>
+          <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer"><BsFacebook className='icon'/></a>
+          <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><BsInstagram className='icon'/></a>
+          <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer"><BsTwitter className='icon'/></a>
+          <a href='https://www.pinterest.com/' target="_blank" rel="noopener noreferrer"><BsPinterest className='icon'/></a>
+          <a href='https://www.youtube.com/' target="_blank" rel="noopener noreferrer"><BsYoutube className='icon'/></a>
       </li>
     </div>
 
