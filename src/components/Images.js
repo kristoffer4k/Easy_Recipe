@@ -7,5 +7,6 @@ import image6 from '../assets/corousel-images/6.jpg';
 import image7 from '../assets/corousel-images/7.jpg';
 import image8 from '../assets/corousel-images/8.jpg';
 import image9 from '../assets/corousel-images/9.jpg';
+import image10 from '../assets/corousel-images/10.jpg';
 // eslint-disable-next-line
-export default [image1, image2, image3, image4, image5, image6, image7, image8, image9]
+export default [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10]
