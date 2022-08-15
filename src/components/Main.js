@@ -47,7 +47,7 @@ const Main = () => {
                                 <p className='cuisine'>Type: {item['recipe']['mealType']}</p>
                                 <p className='ingredients'>Ingredients: {item['recipe']['ingredients'].length}</p>
                                 <p className='diet'>Diet: {item['recipe']['dietLabels']}</p>
-                                <p className='calories'>Calories: {item['recipe']['calories'].toFixed(0)}</p>
+                                <p className='calories'>Calories: {item['recipe']['calories'].toFixed(0)} kcal</p>
                             </div>
                             <button className='open'>{<a href={item['recipe']['url']} target="_blank" rel="noopener noreferrer">Open</a>}</button>
                         </div>
