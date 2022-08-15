@@ -42,8 +42,10 @@ const Main = () => {
                         <div key={index} className='product'>
                             <img src={item['recipe']['image']} alt='' className='image'/>
                             <p className='tittle'>{item['recipe']['label']}</p>
-                            <p className='ingredients'>Ingredients: {item['recipe']['ingredients'].length}</p>
-                            <p className='calories'>Calories: {item['recipe']['calories'].toFixed(0)}</p>
+                            <p className='cuisine items'>Cuisine: {item['recipe']['cuisineType']}</p>
+                            <p className='ingredients items'>Ingredients: {item['recipe']['ingredients'].length}</p>
+                            <p className='diet items'>Diet: {item['recipe']['dietLabels']}</p>
+                            <p className='calories items'>Calories: {item['recipe']['calories'].toFixed(0)}</p>
                             <button className='open'>{<a href={item['recipe']['url']} target="_blank" rel="noopener noreferrer">Open</a>}</button>
                         </div>
                     )

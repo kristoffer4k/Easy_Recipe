@@ -74,30 +74,48 @@
             scale: 0.95;
         }
     
-    .print {
-        display: grid;
-        margin: 0 10%;
-        text-align: center;
-        grid-template-columns: repeat(3, 250px);
-        gap: 2rem;
-        justify-content: center;
-        overflow: auto;
-        padding-bottom: 1rem;
+        .print {
+            display: grid;
+            margin: 0 10%;
+            text-align: center;
+            grid-template-columns: repeat(3, 250px);
+            gap: 2rem;
+            justify-content: center;
+            overflow: auto;
+            padding-bottom: 1rem;
+            
+            
         
-    
-        .product {
-            background-color: $light-grey-color;
-            border-radius: 25px;
-            padding: 1rem;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            // box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            font-family: $font-montserrat;
-            img {
+            .product {
+                background-color: $light-grey-color;
                 border-radius: 25px;
-                width: 200px;
-                height: 200px;
-                
-            }
+                padding: 1.5rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                font-family: $font-montserrat;
+                // position: relative;
+    
+                .tittle {
+                    font-weight: 600;
+                    margin: 0.8rem 0;
+                }
+    
+                .items {
+                    text-align: left;
+                    font-size: 0.8rem;
+                }
+    
+                .image {
+                    border-radius: 25px;
+                    width: 200px;
+                    height: 200px;
+                }
+    
+                .open {
+                    margin-top: 0.8rem;
+                    //  position: absolute;
+                    //  bottom: 0;
+                }
+    
         }
         // .product:hover{
         //     scale: 1.05;
