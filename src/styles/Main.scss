@@ -71,7 +71,7 @@
                 transition: 0.5s;
             }
         .search:active {
-            scale: 0.95;
+            scale: 1;
         }
     
         .print {
@@ -83,16 +83,21 @@
             justify-content: center;
             overflow: auto;
             padding-bottom: 1rem;
+            grid-row-end: 0;
             
             
         
             .product {
-                background-color: $light-grey-color;
+                // background-color: $light-grey-color;
+                background: linear-gradient(-45deg, $main-color, $light-grey-color);
+                // background: linear-gradient(-45deg, $light-grey-color, $main-color);
                 border-radius: 25px;
                 padding: 1.5rem;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                 font-family: $font-montserrat;
-                // position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
     
                 .tittle {
                     font-weight: 600;
@@ -102,18 +107,38 @@
                 .items {
                     text-align: left;
                     font-size: 0.8rem;
+                    justify-content:flex-start;
                 }
     
                 .image {
                     border-radius: 25px;
                     width: 200px;
                     height: 200px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
                 }
     
                 .open {
                     margin-top: 0.8rem;
-                    //  position: absolute;
-                    //  bottom: 0;
+                    align-self: center;
+                    padding: 0.5rem 0.5rem;
+                    height: 2rem;
+                    width: 5rem;
+                    font-family: $font-montserrat;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    border: 1px solid $light-grey-color;
+                    border-radius: 15px;
+                    background-color: $light-grey-color;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        font-family: $font-montserrat;
+                        color: $secondary-color;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+
+                    }
                 }
     
         }
