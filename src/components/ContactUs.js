@@ -1,111 +1,103 @@
 import '../styles/ContactUs.scss'
 import React from 'react'
 import { useForm } from "react-hook-form";
+import Footer from './Footer';
+import Header from './Header'
 
-const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm({
-      mode:'onTouched'
-  });
 
-  const onSubmit = data => console.log(data);
+function ContactUs() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+    trigger,
+  } = useForm();
 
-return (
-  
-    <section className='form'>
-       <form onSubmit={handleSubmit(onSubmit)}>
-          
-          <div className="header">
-            <h2>Contact us</h2>
-          </div>
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+    alert('Your message has been sent succesfully!')
+  };
 
-          <div className='body'>
-            <div className="name">
-              <div className='name-input'>
+  return (
+    
+    <section className="form-section">
+      <Header />
+          <div className="form-container">
+            <h2 className="header">Contact Us</h2>
+
+            <form onSubmit={handleSubmit(onSubmit)} className="form">
+              <div className="form-group name">
+                <label className="label">Name:</label>
                 <input
                   type="text"
-                  placeholder="Full name"
-
-                  {...register("fullName", { 
-                      required: {
-                          value: true,
-                          message: 'Full name is required'
-                      },
-                      minLength: {
-                          value: 3,
-                          message: "Minimum allowed length is 3 characters",
-                        },
-                        maxLength: {
-                          value: 20,
-                          message: "Maximum allowed length is 20 characters",
-                        },
-                        pattern: {
-                          value: /[a-zA-Z]+/,
-                          message: "Please enter only alphabets",
-                        }
-                   })}
+                  className='input'
+                  {...register("name", { required: "Name is Required",
+                  minLength: {
+                    value: 2,
+                    message: "Minimum Required length is 2",
+                  }})}
+                  onKeyUp={() => {
+                    trigger("name");
+                  }}
                 />
-                <div className='name-error'>
-                {errors.fullName && <span>{errors.fullName.message}</span>}
-                </div>
+                {errors.name && (
+                  <p className="error">{errors.name.message}</p>
+                )}
               </div>
 
-              <div className='email'>
+              <div className="form-group email">
+                <label className="label">E-mail:</label>
                 <input
-                  type="email"
-                  placeholder="E-mail address"
-                  {...register("email", { 
-                      required: {
-                          value: true,
-                          message: 'Email is required'
-                      },
-                  
-                        pattern: {
-                          value: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,
-                          message: "Please enter a valid email",
-                        }
-                   })}
+                  type="text"
+                  className='input'
+                  {...register("email", { required: "E-mail is Required" ,
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "Invalid e-mail address",
+                  }})}
+                  onKeyUp={() => {
+                    trigger("email");
+                  }}
                 />
-                <div className='email-error'>
-                {errors.email && <span>{errors.email.message}</span>}
-                </div>
+                {errors.email && (
+                  <p className="error">{errors.email.message}</p>
+                )}
               </div>
-
-              <div className='message'>
+                
+              <div className="form-group">
+                <label className="label">Message:</label>
                 <textarea
-                  placeholder="message"
-                  {...register("comment", { 
-                      required: {
-                          value: true,
-                          message: 'Comment is required'
-                      },
-                      minLength: {
-                          value: 3,
-                          message: "Minimum allowed length is 3 characters",
-                        },
-                        maxLength: {
-                          value: 60,
-                          message: "Maximum allowed length is 180 characters ",
-                        },
-
-                   })}
-                />
-                <div className='message-error'>
-                {errors.comment && <span>{errors.comment.message}</span>}
-                </div>
+                  className='input'
+                  {...register("message", { required: "Message is Required",
+                  minLength: {
+                    value: 10,
+                    message: "Minimum Required length is 10",
+                  },
+                  maxLength: {
+                    value: 50,
+                    message: "Maximum allowed length is 180 ",
+                  }
+                 })}
+                 onKeyUp={() => {
+                  trigger("message");
+                }}
+                ></textarea>
+                {errors.message && (
+                  <p className="error">{errors.message.message}</p>
+                )}
               </div>
-
-              <div className='button-submit'>
               <input
-                  type="submit"
-                  value="Submit"
-                   />
-              </div>
-            </div>
+                type="submit"
+                className="button"
+                value="Send message"
+              />
+            </form>
           </div>
-      </form>
+        <Footer /> 
     </section>
-  
-);
-};
+  );
+}
 
-export default Contact
+export default ContactUs;
