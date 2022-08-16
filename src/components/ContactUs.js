@@ -24,6 +24,7 @@ function ContactUs() {
     
     <section className="form-section">
       <Header />
+        <div className='form'>
           <div className="form-container">
             <h2 className="header">Contact Us</h2>
 
@@ -50,8 +51,8 @@ function ContactUs() {
               <div className="form-group email">
                 <input
                   type="text"
-                  className='input'
-                  placeholder='E-mail address'
+                  className='input email-input'
+                  placeholder='Email address'
                   {...register("email", { required: "E-mail is Required" ,
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -91,9 +92,10 @@ function ContactUs() {
               <input
                 type="submit"
                 className="button"
-                value="Send message"
+                value="Submit"
               />
             </form>
+          </div>
           </div>
           <Footer />
     </section>

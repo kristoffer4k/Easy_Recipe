@@ -3,16 +3,71 @@
 @import './mixins';
 
 .form-section {
-    height: 100;
-    .form-container {
-        margin: 8rem 10%;
-        border-radius: 25px;
-        padding: 5rem;
-        display: flex;
+    
+    .form {
+        @include flex-center;
         flex-direction: column;
-        align-items: center;
-        background: $light-grey-color;
-    }
+        height: 100%;
+        padding-bottom: 2rem;
+    
+        .form-container {
+            margin: 8% 10%;
+            width: 25rem;
+            height: 34rem;
+            border-radius: 25px;
+            padding: 2rem;
+            background: $light-grey-color;
+            overflow: hidden;
+            
+
+            .header {
+                z-index: 0;
+                text-align: center;
+                font-family: $font-montserrat;
+                font-weight: 600;
+            }
+
+            form {
+                text-align: left;
+                align-items: flex-start;
+                justify-content: space-between;
+                font-family: $font-montserrat;
+
+                .form-group {
+                    input {
+                        @include input;
+                        width: 23rem;
+                    }
+
+                    .email-input{
+                        margin-top: 0;
+                    }   
+
+                    textarea {
+                    width: 23rem;
+                    height: 14rem;
+                    padding: 0.5rem;
+                    justify-content: center;
+                    margin-right: 0.5rem;
+                    font-family: $font-montserrat;
+                    font-size: 0.8rem;
+                    color: $black-color;
+                    border: 1px solid $white-color;
+                    border-radius: 15px;
+                    }
+                    .error {
+                        color: $secondary-color;
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .button {
+                    margin-top: 0;
+                }
+            }
+        }
 }
 
 
+
+}
