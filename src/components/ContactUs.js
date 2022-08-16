@@ -89,11 +89,13 @@ function ContactUs() {
                   <p className="error">{errors.message.message}</p>
                 )}
               </div>
-              <input
-                type="submit"
-                className="button"
-                value="Submit"
-              />
+              <div className='form-group submit'>
+                <input
+                  type="submit"
+                  className="button"
+                  value="Submit"
+                />
+              </div>
             </form>
           </div>
           </div>
