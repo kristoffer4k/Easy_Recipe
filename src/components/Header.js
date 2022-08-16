@@ -10,8 +10,8 @@ const Header = () => {
         <ul className='ul-items'>
           <li className='li-items'>
             <Link to='/'>Home</Link>
-            <Link to='tips'>Kitchen Tips</Link>
-            <Link to='contact'>Contact Us</Link>
+            <Link to='tips'>Kitchen tips</Link>
+            <Link to='contact'>Contact us</Link>
           </li>
         </ul>
       </nav>

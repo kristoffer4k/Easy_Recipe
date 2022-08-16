@@ -26,7 +26,7 @@ function ContactUs() {
       <Header />
         <div className='form'>
           <div className="form-container">
-            <h2 className="header">Contact Us</h2>
+            <h2 className="header">Contact us</h2>
 
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form-group name">

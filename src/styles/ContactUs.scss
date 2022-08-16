@@ -16,20 +16,20 @@
 
         .form-container {
             margin: 20% 10% 10%;
-            width: 28rem;
+            width: 30rem;
             height: 32rem;
             border-radius: 15px;
             padding: 2rem;
-            background: $light-grey-color2;
+            background: $light-grey-color;
             overflow: hidden;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 4px;
             
 
             .header {
                 z-index: 0;
                 text-align: center;
                 font-family: $font-montserrat;
-                font-weight: 600;
+                font-weight: 500;
                 color: $black-color;
             }
 
@@ -38,7 +38,7 @@
                 align-items: center;
                 justify-content: space-between;
                 font-family: $font-montserrat;
-                background: $light-grey-color2;
+                background: $light-grey-color;
 
                 .form-group {
                     input {
@@ -75,6 +75,9 @@
                     textarea:focus {
                         outline: none;
                     }
+                    textarea:focus::placeholder {
+                        color: transparent;
+                      }
                     .error {
                         color: $secondary-color;
                         font-size: 0.7rem;
