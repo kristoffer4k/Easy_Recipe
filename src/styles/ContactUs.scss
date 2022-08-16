@@ -7,16 +7,20 @@
     .form {
         @include flex-center;
         flex-direction: column;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)), url(../assets/main.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        overflow: hidden;
         height: 100%;
-        // padding-bottom: 2rem;
-    
+
+
         .form-container {
-            margin: 8% 10%;
+            margin: 20% 10% 10%;
             width: 28rem;
-            height: 34rem;
+            height: 32rem;
             border-radius: 15px;
             padding: 2rem;
-            background: $light-grey-color;
+            background: $light-grey-color2;
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
             
@@ -26,6 +30,7 @@
                 text-align: center;
                 font-family: $font-montserrat;
                 font-weight: 600;
+                color: $black-color;
             }
 
             form {
@@ -33,6 +38,7 @@
                 align-items: center;
                 justify-content: space-between;
                 font-family: $font-montserrat;
+                background: $light-grey-color2;
 
                 .form-group {
                     input {
@@ -56,7 +62,7 @@
 
                     textarea {
                     width: 26rem;
-                    height: 14rem;
+                    height: 12rem;
                     padding: 0.5rem;
                     justify-content: center;
                     margin-right: 0.5rem;
