@@ -29,10 +29,10 @@ function ContactUs() {
 
             <form onSubmit={handleSubmit(onSubmit)} className="form">
               <div className="form-group name">
-                <label className="label">Name:</label>
                 <input
                   type="text"
                   className='input'
+                  placeholder='Name'
                   {...register("name", { required: "Name is Required",
                   minLength: {
                     value: 2,
@@ -48,10 +48,10 @@ function ContactUs() {
               </div>
 
               <div className="form-group email">
-                <label className="label">E-mail:</label>
                 <input
                   type="text"
                   className='input'
+                  placeholder='E-mail address'
                   {...register("email", { required: "E-mail is Required" ,
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -67,9 +67,9 @@ function ContactUs() {
               </div>
                 
               <div className="form-group">
-                <label className="label">Message:</label>
                 <textarea
                   className='input'
+                  placeholder='Your message'
                   {...register("message", { required: "Message is Required",
                   minLength: {
                     value: 10,
@@ -95,8 +95,9 @@ function ContactUs() {
               />
             </form>
           </div>
-        <Footer /> 
+          <Footer />
     </section>
+  
   );
 }
 
