@@ -8,7 +8,8 @@
     background-color: $main-color;
     font-family: $font-montserrat;
     color: $white-color;
-    
+    bottom: 0;
+
     .newsletter {
         @include flex-center;
         justify-content: space-between;

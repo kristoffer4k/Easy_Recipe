@@ -1,8 +1,9 @@
 .underContruction {
-    height: 20rem;
+    // height: 20rem;
     background-image: url(../assets/under.jpg);
-    background-size: contain;
+    background-size: 22rem;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 15% 10%;
+    margin: 5% 10%;
+    min-height: calc(100vh - 16.5rem);
 }

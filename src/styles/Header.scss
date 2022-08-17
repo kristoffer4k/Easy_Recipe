@@ -63,10 +63,10 @@
 
   @media (max-width: 720px) {
     .header nav {
-        
+        justify-content: center;
         .ul-items {
             font-size: 0.6rem;
-            margin-right: 0;
+            margin: 0;
             justify-content: center;
         }
         .logo {
@@ -77,10 +77,10 @@
 
   @media (max-width: 570px) {
     .header nav {
-        
+        justify-content: center;
         .ul-items {
             font-size: 0.5rem;
-            margin-right: 0;
+            margin: 0;
             justify-content: center;
         }
         .logo {
