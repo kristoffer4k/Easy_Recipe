@@ -31,8 +31,9 @@ function Footer() {
       <div className='newsletter'>
         <h3>Subscribe to our weekly newsletter so that you never miss the newest recipes!</h3>
           <form className='form_2' onSubmit={handleSubmit(onSubmit)}>
+            <div className='email-newsletter'>
             <input type='text' placeholder='Email address'
-              {...register("email", {required: "E-mail is Required",
+              {...register("email", {required: " ",
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                 message: "Invalid e-mail address",
@@ -41,11 +42,15 @@ function Footer() {
                 trigger("email");
               }}
             />
-            {errors.email && (
-              <p className="error">{errors.email.message}</p>
-            )}
+
             <button  type='submit' className="button"
                   value="Submit">Sign Up</button>
+            </div>
+            <div className='error-container'>
+            {errors.email && (
+              <p className="error">{errors.email.message}</p>
+            )}  
+            </div>      
           </form>
       </div>
       
