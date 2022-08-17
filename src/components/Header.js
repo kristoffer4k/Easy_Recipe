@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Header.scss'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 
 const Header = () => {
   return (
@@ -10,8 +11,8 @@ const Header = () => {
         <ul className='ul-items'>
           <li className='li-items'>
             <Link to='/'>Home</Link>
-            <Link to='tips'>Kitchen tips</Link>
-            <Link to='contact'>Contact us</Link>
+            <Link to='/tips'>Kitchen tips</Link>
+            <Link to='/contact'>Contact us</Link>
           </li>
         </ul>
       </nav>

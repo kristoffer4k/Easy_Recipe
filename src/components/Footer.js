@@ -29,7 +29,7 @@ function Footer() {
   return (
     <section className='footer'>
       <div className='newsletter'>
-        <h3>Subscribe to our weekly newsletter so that you never miss the newest recipes!</h3>
+        <h3>Subscribe to our weekly newsletter!</h3>
           <form className='form_2' onSubmit={handleSubmit(onSubmit)}>
             <div className='email-newsletter'>
             <input type='text' placeholder='Email address'

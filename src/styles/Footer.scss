@@ -150,9 +150,8 @@
     
 }
     
-
-@media (max-width:1024px) {
-    .footer {
-      height: 13rem;
+@media (max-width: 960px) {
+    .footer .newsletter h3 {
+        font-size: 0.7rem;
     }
-  }
+}

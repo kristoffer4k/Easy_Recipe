@@ -48,8 +48,43 @@
     }
 }
 
-@media (max-width: 1024px) {
+  @media (max-width: 960px) {
     .header nav {
-      height: 6rem;
+        
+        .ul-items {
+            font-size: 0.7rem;
+            justify-content: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+        }
+    }
+  }
+
+  @media (max-width: 720px) {
+    .header nav {
+        
+        .ul-items {
+            font-size: 0.6rem;
+            margin-right: 0;
+            justify-content: center;
+        }
+        .logo {
+            font-size: 1.2rem;
+        }
+    }
+  }
+
+  @media (max-width: 570px) {
+    .header nav {
+        
+        .ul-items {
+            font-size: 0.5rem;
+            margin-right: 0;
+            justify-content: center;
+        }
+        .logo {
+            font-size: 1rem;
+        }
     }
   }

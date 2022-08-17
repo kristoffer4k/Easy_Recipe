@@ -2,8 +2,7 @@ import '../styles/ContactUs.scss'
 import React from 'react'
 import { useForm } from "react-hook-form";
 import Footer from './Footer';
-import Header from './Header'
-
+import Header from './Header';
 
 function ContactUs() {
   const {
