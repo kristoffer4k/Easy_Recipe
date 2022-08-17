@@ -18,7 +18,7 @@
             margin: 20% 10% 10%;
             width: 30rem;
             height: 32rem;
-            border-radius: 15px;
+            border-radius: 20px;
             padding: 2rem;
             background: $light-grey-color;
             overflow: hidden;
@@ -70,7 +70,8 @@
                     font-size: 0.8rem;
                     color: $black-color;
                     border: 1px solid $white-color;
-                    border-radius: 15px;
+                    border-radius: 20px;
+                    resize: none;
                     }
                     textarea:focus {
                         outline: none;

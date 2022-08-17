@@ -1,6 +1,7 @@
 import '../styles/Footer.scss'
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { useForm } from "react-hook-form";
 import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
@@ -9,15 +10,43 @@ import { BsYoutube } from 'react-icons/bs';
 
 
 
+
 function Footer() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+    trigger,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+    alert('Thank you for joining our newsletter!')
+  };
+
   return (
     <section className='footer'>
       <div className='newsletter'>
         <h3>Subscribe to our weekly newsletter so that you never miss the newest recipes!</h3>
-          <div className='form_2'>
-            <input type='text' placeholder='Email address'/>
-            <button  type='submit'>Sign Up</button>
-          </div>
+          <form className='form_2' onSubmit={handleSubmit(onSubmit)}>
+            <input type='text' placeholder='Email address'
+              {...register("email", {required: "E-mail is Required",
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: "Invalid e-mail address",
+              }})}
+              onKeyUp={() => {
+                trigger("email");
+              }}
+            />
+            {errors.email && (
+              <p className="error">{errors.email.message}</p>
+            )}
+            <button  type='submit' className="button"
+                  value="Submit">Sign Up</button>
+          </form>
       </div>
       
       
